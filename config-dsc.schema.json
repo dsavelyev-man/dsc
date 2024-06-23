@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "entry": {
+      "examples": ["example.ts", "main.ts", "src/entry.ts"],
+      "description": "path to entry ts node file",
+      "type": "string"
+    },
+    "public": {
+      "description": "allow use this plugin in another plugins",
+      "type": "boolean"
+    },
+    "name": {
+      "description": "plugin name",
+      "type": "string"
+    },
+    "dependencies": {
+      "type": "array"
+    }
+  },
+  "required": ["entry", "name"]
+}

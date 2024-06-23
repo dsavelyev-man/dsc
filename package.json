@@ -1,0 +1,27 @@
+{
+  "name": "dsc",
+  "version": "0.0.1",
+  "description": "constructor websites based on react and express",
+  "main": "index.js",
+  "author": "dsavelyev <kriper0nind@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon main.ts",
+    "start": "ts-node main.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "glob": "^10.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.1"
+  },
+  "workspaces": [
+    "plugins/**"
+  ],
+  "private": true
+}

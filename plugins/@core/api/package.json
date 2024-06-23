@@ -1,0 +1,11 @@
+{
+  "name": "@core/api",
+  "version": "0.0.1",
+  "description": "api for dsc",
+  "main": "main.ts",
+  "author": "dsavelyev",
+  "license": "MIT",
+  "scripts": {
+    "migrations:run": "ts-node migrations.ts"
+  }
+}

@@ -1,0 +1,11 @@
+CREATE TABLE plugins (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(64) NOT NULL,
+    label VARCHAR(64) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    version VARCHAR(64) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    picture VARCHAR(64) NOT NULL,
+    active BOOLEAN NOT NULL DEFAULT TRUE,
+    can_be_disabled BOOLEAN NOT NULL DEFAULT TRUE
+)

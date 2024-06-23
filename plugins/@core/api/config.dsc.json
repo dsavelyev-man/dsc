@@ -1,5 +1,6 @@
 {
   "$schema": "../../../config-dsc.schema.json",
   "entry": "main.ts",
-  "name": "@core/admin"
+  "name": "@core/api",
+  "dependencies": ["@core/database"]
 }
