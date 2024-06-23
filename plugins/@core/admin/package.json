@@ -1,0 +1,14 @@
+{
+  "name": "@core/database",
+  "version": "1.0.0",
+  "description": "database pool package for plugins",
+  "main": "main.ts",
+  "author": "dsavelyev",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.6"
+  }
+}
