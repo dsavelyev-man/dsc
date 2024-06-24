@@ -7,5 +7,9 @@
   "license": "MIT",
   "scripts": {
     "migrations:run": "ts-node migrations.ts"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
   }
 }
