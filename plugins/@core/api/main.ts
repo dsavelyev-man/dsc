@@ -1,9 +1,11 @@
+import { DependencyInjection } from "./framework/DI/DependencyInjection";
 import { Express } from "express";
 import { Client } from "pg";
-import Models from "./models";
 import migrations from "./migrations";
 import "reflect-metadata";
-import App from "./app";
+import App from "./framework/App";
+import { UsersModule } from "./modules/users/users.module";
+import { AppModule } from "./app.module";
 
 export default async (
   app: Express,
@@ -13,9 +15,11 @@ export default async (
     };
   }
 ) => {
-  new App(app);
+  Reflect.defineMetadata("server", app, App);
+
+  const application: App = DependencyInjection.get(App);
+
+  application.init([AppModule]);
 
   migrations(plugins["@core/database"].client);
-
-  const models = new Models(plugins["@core/database"].client);
 };
